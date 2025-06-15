@@ -13,16 +13,16 @@ const ExpertDetailPage = () => {
             name: "Eng. Wassim Karanouh",
             title: "CEO / CFO",
             image: "/background_18.png",
-            education:'​​Dedicated and results-oriented building engineer with a passion for leveraging technological advancements - such as AIDC, RFID, and BIM - to deliver optimal ROI. Entrepreneurial innovator with a proven track record of providing unique and valuable solutions across diverse sectors including public safety, construction, corporate, Healthcare and retail supply chain. Extensive technical knowledge and expertise in RFID technology and a deep understanding of the Saudi market enables the creation of exceptional and innovative solutions',
-            experience:'His professional experience includes roles at Concordia University, Montreal Technical College, EBC Inc. and Kabbani Construction Group. Wassim holds a bachelor\'s and master\'s degree in construction engineering and management from the University of Concordia, and completed the Innovating in the Digital World in Business Administration, Management and Operations program at London Business School in 2020.  ',
+            education: `​​Dedicated and results-oriented building engineer with a passion for leveraging technological advancements - such as AIDC, RFID, and BIM - to deliver optimal ROI. Entrepreneurial innovator with a proven track record of providing unique and valuable solutions across diverse sectors including public safety, construction, corporate, Healthcare and retail supply chain. Extensive technical knowledge and expertise in RFID technology and a deep understanding of the Saudi market enables the creation of exceptional and innovative solutions`,
+            experience: `His professional experience includes roles at Concordia University, Montreal Technical College, EBC Inc. and Kabbani Construction Group. Wassim holds a bachelor's and master's degree in construction engineering and management from the University of Concordia, and completed the Innovating in the Digital World in Business Administration, Management and Operations program at London Business School in 2020.`,
         },
         "mohammad-baroum": {
             id: "mohammad-baroum",
             name: "Mohammad Alawi Baroum",
             title: "Co-Founder",
             image: "/background_22.png",
-            education:'An entrepreneur and a dynamic business management professional, having rich experience with an outstanding record of achievements. Setting strategic directions to the business and managing the performing team with outstanding leadership qualities are a few of his core strengths.',
-            experience:'Our leadership is experienced in planning for growth and analyzing all aspects of the business overall strategy, which can include inorganic growth. With experience in M&A, they are the heart of that challenge, in guiding the team through every stage of their transaction lifecycle, be it acquisitions, disposals, management buy-outs, buy-ins, fundraising, initial public offerings, takeovers, mergers and strategic reviews.',
+            education: `An entrepreneur and a dynamic business management professional, having rich experience with an outstanding record of achievements. Setting strategic directions to the business and managing the performing team with outstanding leadership qualities are a few of his core strengths.`,
+            experience: `Our leadership is experienced in planning for growth and analyzing all aspects of the business overall strategy, which can include inorganic growth. With experience in M&A, they are the heart of that challenge, in guiding the team through every stage of their transaction lifecycle, be it acquisitions, disposals, management buy-outs, buy-ins, fundraising, initial public offerings, takeovers, mergers and strategic reviews.`,
             achievements: [
                 'Joined BTC in 2016 CEO of BTC',
                 'Board Member of several companies locally and internationally',
@@ -34,28 +34,28 @@ const ExpertDetailPage = () => {
             name: "Zeina Attar",
             title: "Chief Legal & HR Advisor",
             image: "/3.png",
-            education: 'Chief Legal & HR Advisor - With over 13 years of expertise in providing regulatory guidance and advice to individuals and organizations. Holding a Master\'s Degree in Islamic Finance. Supported by a wealth of experience in solving legal issues affecting business operations and transactions. Successfully published the master's thesis in the Islamic Bank\'s library. Adept at managing the legal departments\' employees to ensure following the best legal practices.'
+            education: `Chief Legal & HR Advisor - With over 13 years of expertise in providing regulatory guidance and advice to individuals and organizations. Holding a Master's Degree in Islamic Finance. Supported by a wealth of experience in solving legal issues affecting business operations and transactions. Successfully published the master's thesis in the Islamic Bank's library. Adept at managing the legal departments' employees to ensure following the best legal practices.`
         },
         "jose-mateos": {
             id: "jose-mateos",
             name: "Jose Mateos",
             title: "Chief Accountant Officer",
             image: "/4.png",
-            education: "Jose Mateos - Chief Accountant Officer -CPA of more than 20 years work experience in finance and accounting, risk management for various industries such as in banking, IT technologies, drug manufacturing, RFID technologies and medical equipment distributions. KSA VAT and GAZT administration. Has acquired knowledge of the importance and acceptance of data analytics as a good tool to empower people in the organization and revenue source as well as widening market share in the industry. Jose collaborates with the chief financial officer and oversees a team of financial experts to manage daily financial operations and maintain the company's financial stability.",
+            education: `Jose Mateos - Chief Accountant Officer -CPA of more than 20 years work experience in finance and accounting, risk management for various industries such as in banking, IT technologies, drug manufacturing, RFID technologies and medical equipment distributions. KSA VAT and GAZT administration. Has acquired knowledge of the importance and acceptance of data analytics as a good tool to empower people in the organization and revenue source as well as widening market share in the industry. Jose collaborates with the chief financial officer and oversees a team of financial experts to manage daily financial operations and maintain the company's financial stability.`,
         },
         "carlson-lam": {
             id: "carlson-lam",
             name: "Carlson Lam",
             title: "Chief Technology Officer",
             image: "/background_20.png",
-           education:'Carlson Lam, a strategic leader responsible for the IT solutions development at Makamat, has a Bachelor of Applied Science (Electrical Engineering) from the University of Waterloo and a Master of Science (Electronics Engineering) from the University of Hong Kong. He manages the development, implementation, and maintenance of all technology within our organization. Lam\'s robust skill set includes Product Marketing, Embedded Software, Test Engineering, Engineering Management, and Lean Manufacturing. He brings experience from previous roles at LCT Systems, EY, Convergence Systems Limited, and Autoliv.'
+            education: `Carlson Lam, a strategic leader responsible for the IT solutions development at Makamat, has a Bachelor of Applied Science (Electrical Engineering) from the University of Waterloo and a Master of Science (Electronics Engineering) from the University of Hong Kong. He manages the development, implementation, and maintenance of all technology within our organization. Lam's robust skill set includes Product Marketing, Embedded Software, Test Engineering, Engineering Management, and Lean Manufacturing. He brings experience from previous roles at LCT Systems, EY, Convergence Systems Limited, and Autoliv.`
         },
         "abdelmajeed-fayyad": {
             id: "abdelmajeed-fayyad",
             name: "Abdelmajeed Fayyad",
             title: "IT Systems Delivery Manager",
             image: "/background_19.png",
-           education:"IT Systems Delivery Manager - He is responsible for the effective distribution of products and services. He leads the field teams, identifying potential challenges and facilitating solutions. He leads Makamats' projects and ensures everything runs smoothly from concept to completion. Abdelmajeed brings with him over 20 years of experience in IT systems, computers, networking and Low Current Hardware systems integration."
+            education: `IT Systems Delivery Manager - He is responsible for the effective distribution of products and services. He leads the field teams, identifying potential challenges and facilitating solutions. He leads Makamats' projects and ensures everything runs smoothly from concept to completion. Abdelmajeed brings with him over 20 years of experience in IT systems, computers, networking and Low Current Hardware systems integration.`
         }
     };
 
