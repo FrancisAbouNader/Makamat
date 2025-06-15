@@ -1,4 +1,6 @@
 import React from 'react';
+import AnimatedSection from './AnimatedSection';
+import { useStaggeredAnimation } from '../hooks/useScrollAnimation';
 
 const WhyChooseSection = () => {
   const features = [
@@ -20,20 +22,28 @@ const WhyChooseSection = () => {
     }
   ];
 
+  const [containerRef, visibleItems] = useStaggeredAnimation(features.length, 150);
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Why Choose Makamat?
-          </h2>
-        </div>
+        <AnimatedSection animation="fadeInUp" delay={200}>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Why Choose Makamat?
+            </h2>
+          </div>
+        </AnimatedSection>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="relative rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-200"
+              className={`relative rounded-2xl overflow-hidden shadow-lg transform transition-all duration-700 hover:scale-105 hover:shadow-2xl ${
+                visibleItems.has(index) 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-8'
+              }`}
               style={{
                 backgroundImage: 'url(/backgroud_2.png)',
                 backgroundSize: 'cover',
@@ -46,7 +56,7 @@ const WhyChooseSection = () => {
               <div className="relative z-10 p-6 text-white h-full flex flex-col">
                 {/* Orange gradient button */}
                 <div className="mb-6">
-                  <div className="inline-block bg-gradient-to-r from-orange-400 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  <div className="inline-block bg-gradient-to-r from-orange-400 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold transform hover:scale-105 transition-transform duration-300">
                     {feature.title}
                   </div>
                 </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import AnimatedSection from '../components/AnimatedSection';
+import { useStaggeredAnimation } from '../hooks/useScrollAnimation';
 
 const CaseStudiesPage = () => {
     const caseStudies = [
@@ -71,10 +73,12 @@ const CaseStudiesPage = () => {
         }
     ];
 
+    const [studiesRef, visibleStudies] = useStaggeredAnimation(caseStudies.length, 100);
+
     return (
         <>
             <Header/>
-            <main className="min-h-screen overflow-hidden relative">
+            <main className="min-h-screen overflow-hidden relative pt-16">
                 {/* Half Circle Background with Custom Gradient - positioned to show only left half */}
                 <div
                     className="absolute top-24 -right-[350px] w-[650px] h-[650px] blur-md rounded-full pointer-events-none"
@@ -84,34 +88,45 @@ const CaseStudiesPage = () => {
                 />
 
                 {/* Content */}
-                <section className="relative mt-[250px] z-10 py-28 px-4 sm:px-6 lg:px-8">
+                <section className="relative mt-[200px] z-10 py-28 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-5xl mx-auto text-left">
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                            Case Studies
-                        </h1>
-                        <p className="text-lg text-gray-700 leading-relaxed max-w-2xl">
-                            Explore how we brought Makamat's digital presence to life through a tailored web experience
-                            that reflects its corporate identity and innovation-driven vision.
-                        </p>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
+                            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                                Case Studies
+                            </h1>
+                        </AnimatedSection>
+                        <AnimatedSection animation="fadeInUp" delay={400}>
+                            <p className="text-lg text-gray-700 leading-relaxed max-w-2xl">
+                                Explore how we brought Makamat's digital presence to life through a tailored web experience
+                                that reflects its corporate identity and innovation-driven vision.
+                            </p>
+                        </AnimatedSection>
                     </div>
                 </section>
 
                 {/* Case Studies Grid */}
                 <section className="relative mt-20 z-10 py-20 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div ref={studiesRef} className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {caseStudies.map((study, index) => (
-                                <div key={index} className="p-8">
+                                <div 
+                                    key={index} 
+                                    className={`p-8 transform transition-all duration-700 hover:scale-105 hover:shadow-lg ${
+                                        visibleStudies.has(index) 
+                                            ? 'opacity-100 translate-y-0' 
+                                            : 'opacity-0 translate-y-8'
+                                    }`}
+                                >
                                     {/* Company Logo and Category */}
                                     <div className="flex items-start gap-x-5">
                                         <img
                                             src={study.logo}
                                             alt={study.company}
-                                            className="w-16 h-16 object-contain flex-shrink-0"
+                                            className="w-16 h-16 object-contain flex-shrink-0 transform hover:scale-110 transition-transform duration-300"
                                         />
                                         <div className="flex-1">
                                             {/* Case Study Title */}
-                                            <h4 className="text-xl font-semibold text-gray-900 mb-4 leading-tight">
+                                            <h4 className="text-xl font-semibold text-gray-900 mb-4 leading-tight hover:text-blue-600 transition-colors duration-300">
                                                 {study.title}
                                             </h4>
 
@@ -124,7 +139,7 @@ const CaseStudiesPage = () => {
                                     <div className="flex justify-end items-center">
                                         <Link
                                             to={`/case-studies/${study.id}`}
-                                            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-1 rounded-full font-medium transition-colors duration-200"
+                                            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-1 rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                                         >
                                             Read More
                                         </Link>
