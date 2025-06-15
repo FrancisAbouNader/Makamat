@@ -1,0 +1,186 @@
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+const SolutionsPage = () => {
+  return (
+      <>
+        <Header />
+        <main className="min-h-screen bg-white">
+          {/* Hero Section */}
+          <section className="relative pt-20">
+            {/* Text Content */}
+            <div className="relative z-10 text-center mb-16">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8">
+                RFID Solutions by Makamat
+              </h1>
+              <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                Makamat offers cutting-edge Radio Frequency Identification (RFID) technology solutions designed to enhance
+                operational efficiency, security, and asset management across various industries in Saudi Arabia.
+              </p>
+            </div>
+
+            {/* Globe Image */}
+            <div className="flex justify-center relative">
+              <img
+                  className="w-auto object-contain z-0"
+                  src="/globe.png"
+                  alt="Global RFID Solutions"
+              />
+            </div>
+          </section>
+
+          <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+            {/* Gradient Background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-orange-500 to-red-500"></div>
+
+            {/* Content */}
+            <div className="relative z-10 max-w-6xl mx-auto text-center">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
+                What is RFID?
+              </h2>
+              <p className="text-lg md:text-xl text-white leading-relaxed max-w-5xl mx-auto">
+                RFID utilizes radio waves to automatically identify and track tags attached to objects. These tags contain
+                electronically stored information, enabling seamless data capture without the need for line-of-sight scanning.
+              </p>
+            </div>
+          </section>
+
+          <section className="py-20 bg-white px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Our RFID Solutions
+              </h2>
+              <p className="text-gray-600 mb-12">
+                Makamat provides a comprehensive suite of RFID solutions tailored to meet the unique needs of different sectors:
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                {[
+                  {
+                    title: "Asset Tracking",
+                    description: "Real-time monitoring of assets to prevent loss, streamline maintenance, and optimize utilization."
+                  },
+                  {
+                    title: "Supply Chain Management",
+                    description: "Enhancing visibility and control throughout the supply chain, from procurement to delivery."
+                  },
+                  {
+                    title: "Healthcare",
+                    description: "Improving patient safety, inventory management, and equipment tracking within healthcare facilities."
+                  },
+                  {
+                    title: "Retail",
+                    description: "Boosting inventory accuracy, reducing shrinkage, and enhancing customer experience through efficient stock management."
+                  },
+                  {
+                    title: "Industrial Safety",
+                    description: "Implementing RFID systems to monitor equipment, ensure compliance, and enhance workplace safety."
+                  },
+                  {
+                    title: "Food Safety",
+                    description: "Tracking perishable goods to maintain quality and compliance with health standards."
+                  }
+                ].map((card, idx) => (
+                    <div
+                        key={idx}
+                        className="rounded-xl min-h-[300px] p-6 bg-gradient-to-br from-yellow-200 via-orange-300 to-red-200 shadow-md hover:shadow-xl transition-shadow duration-300"
+                    >
+                      <h3 className="text-lg font-semibold text-gray-900 border-b border-black mb-4 inline-block">
+                        {card.title}
+                      </h3>
+                      <p className="text-gray-800 text-sm leading-relaxed">{card.description}</p>
+                    </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Our Process Section */}
+          <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+            <div className="max-w-6xl mx-auto">
+              {/* Quotation */}
+              <div className="text-center mb-16">
+                <blockquote className="text-lg md:text-xl italic text-gray-800 font-medium">
+                  "Through technological innovation, what was once impossible is now within reach"
+                </blockquote>
+              </div>
+
+              {/* Heading */}
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-16 text-left">
+                Our Process
+              </h2>
+
+              {/* Process Steps with Single Continuous Gradient Line */}
+              <div className="relative">
+                {/* Single Continuous Gradient Line */}
+                <div className="absolute left-[calc(33.333%-2px)] top-0 w-10 h-full bg-[#E49D23] rounded-full blur-md" />
+
+                <div className="space-y-12">
+                  {[
+                    {
+                      title: "Consultation",
+                      description: "Understanding your operational challenges and requirements."
+                    },
+                    {
+                      title: "Design",
+                      description: "Crafting a customized RFID solution tailored to your needs."
+                    },
+                    {
+                      title: "Installation",
+                      description: "Deploying the solution with minimal disruption to your operations."
+                    },
+                    {
+                      title: "Training",
+                      description: "Educating your team to effectively utilize the new system."
+                    },
+                    {
+                      title: "Support & Maintenance",
+                      description: "Providing ongoing assistance to ensure optimal performance."
+                    }
+                  ].map((step, index) => (
+                      <div key={index} className="flex items-start gap-8 relative">
+                        {/* Left column (Title) */}
+                        <div className="w-1/3 min-w-[200px]">
+                          <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                            {step.title}
+                          </h3>
+                        </div>
+
+                        {/* Right column (Description) */}
+                        <div className="flex-1 text-end">
+                          <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                            {step.description}
+                          </p>
+                        </div>
+                      </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Get Started Section */}
+              <div className="mt-20 text-left">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  Get Started
+                </h3>
+                <div className="flex justify-between  items-center ">
+
+                  <p className="text-base md:text-lg text-center text-gray-700">
+                    Explore how Makamat's RFID solutions can transform your operations
+                  </p>
+                  <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-1 rounded-full font-medium transition-colors duration-200">
+                    Learn More
+                  </button>
+                </div>
+
+
+              </div>
+            </div>
+          </section>
+        </main>
+        <Footer />
+      </>
+  );
+};
+
+export default SolutionsPage;
