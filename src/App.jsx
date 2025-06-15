@@ -25,7 +25,6 @@ function App() {
           <Route path="/gbms" element={<GBMSPage />} />
           <Route path="/gbms/team/:id" element={<GBMSTeamMemberPage />} />
             <Route path="/digilink" element={<DigilinkPage />} />
-            <Route path="/digilink" element={<DigilinkPage />} />
             <Route path="/experts" element={<ExpertsPage />} />
             <Route path="/experts/:id" element={<ExpertDetailPage />} />
           <Route path="/contact" element={<ContactUs />} />
