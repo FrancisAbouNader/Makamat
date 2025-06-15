@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import AnimatedSection from '../components/AnimatedSection';
 
 const GBMSTeamMemberPage = () => {
     const { id } = useParams();
@@ -63,56 +64,64 @@ const GBMSTeamMemberPage = () => {
                 {/* Main Content Container */}
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                     {/* Profile Section */}
-                    <div className="text-center mb-12">
-                        {/* Profile Image */}
-                        <div className="w-48 h-48 mx-auto mb-8 overflow-hidden">
-                            <img
-                                src={member.image}
-                                alt={member.name}
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
+                    <AnimatedSection animation="fadeInUp" delay={200}>
+                        <div className="text-center mb-8 md:mb-12">
+                            {/* Profile Image */}
+                            <div className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-6 md:mb-8 overflow-hidden">
+                                <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    className="w-full h-full object-cover rounded-[25px] md:rounded-[50px]"
+                                />
+                            </div>
 
-                        {/* Name and Title */}
-                        <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                            {member.name}, <span className="font-normal">{member.title}</span>
-                        </h1>
+                            {/* Name and Title */}
+                            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                                {member.name}, <span className="font-normal">{member.title}</span>
+                            </h1>
 
-                        {/* Blue Progress Bar */}
-                        <div className="w-3/4 blur-sm mt-5 mx-auto bg-gray-200 rounded-full h-3 mb-8">
-                            <div className="bg-blue-500 h-3 rounded-full"></div>
+                            {/* Blue Progress Bar */}
+                            <div className="w-3/4 blur-sm mt-5 mx-auto bg-gray-200 rounded-full h-3 mb-6 md:mb-8">
+                                <div className="bg-blue-500 h-3 rounded-full"></div>
+                            </div>
                         </div>
-                    </div>
+                    </AnimatedSection>
 
                     {/* Content Grid */}
-                    <div className="grid grid-cols-1 max-w-5xl mx-auto">
-                        {/* Left Column - Education */}
-                        <div className="space-y-6">
-                            <p className="text-gray-700 leading-relaxed text-lg">
-                                {member.education}
-                            </p>
-                        </div>
+                    <div className="grid grid-cols-1 max-w-5xl mx-auto space-y-6">
+                        {/* Education */}
+                        <AnimatedSection animation="fadeInLeft" delay={400}>
+                            <div className="space-y-6">
+                                <p className="text-gray-700 leading-relaxed text-base md:text-lg">
+                                    {member.education}
+                                </p>
+                            </div>
+                        </AnimatedSection>
 
-                        {/* Right Column - Skills */}
-                        <div className="space-y-6">
-                            <p className="text-gray-700 leading-relaxed text-lg">
-                                {member.skills}
-                            </p>
-                        </div>
+                        {/* Skills */}
+                        <AnimatedSection animation="fadeInRight" delay={600}>
+                            <div className="space-y-6">
+                                <p className="text-gray-700 leading-relaxed text-base md:text-lg">
+                                    {member.skills}
+                                </p>
+                            </div>
+                        </AnimatedSection>
                     </div>
 
                     {/* Back Navigation */}
-                    <div className="text-center mt-16">
-                        <Link
-                            to="/gbms"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-lg"
-                        >
-                            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                            </svg>
-                            Back to GBMS Team
-                        </Link>
-                    </div>
+                    <AnimatedSection animation="fadeInUp" delay={800}>
+                        <div className="text-center mt-12 md:mt-16">
+                            <Link
+                                to="/gbms"
+                                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-base md:text-lg transition-colors duration-300"
+                            >
+                                <svg className="w-4 h-4 md:w-5 md:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                </svg>
+                                Back to GBMS Team
+                            </Link>
+                        </div>
+                    </AnimatedSection>
                 </div>
             </main>
             <Footer />
