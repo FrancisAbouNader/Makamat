@@ -13,7 +13,7 @@ const ExpertsPage = () => {
             title: 'CEO / CFO',
             image: '/background_18.png',
             expertise: 'RFID & Automation, Strategic Finance',
-            description: 'A visionary building engineer with extensive experience in RFID and construction technology, Wassim leads Makamat\'s strategic direction, financial operations, and innovation agenda. His educational background includes a Master's in Construction Engineering & Management from Concordia University and executive education from London Business School.\n'
+            description: 'A visionary building engineer with extensive experience in RFID and construction technology, Wassim leads Makamat\'s strategic direction, financial operations, and innovation agenda. His educational background includes a Master\'s in Construction Engineering & Management from Concordia University and executive education from London Business School.\n'
         },
         {
             id: 'mohammad-baroum',
@@ -21,7 +21,7 @@ const ExpertsPage = () => {
             title: 'Co-Founder',
             image: '/background_22.png',
             expertise: 'Strategic Management & Investment',
-            description: 'An accomplished business strategist, Baroum brings over a decade of leadership in business development and corporate governance. He is CEO of BTC, a board member in several companies, and a shareholder across Makamat's affiliated entities.\n'
+            description: 'An accomplished business strategist, Baroum brings over a decade of leadership in business development and corporate governance. He is CEO of BTC, a board member in several companies, and a shareholder across Makamat\'s affiliated entities.\n'
         },
     ];
 
@@ -32,7 +32,7 @@ const ExpertsPage = () => {
             title: 'Chief Legal & HR Advisor',
             image: '/3.png',
             expertise: 'Legal Advisory & HR Compliance',
-            description: 'Holding a Master's in Islamic Finance and over 13 years of legal expertise, Zeina provides strategic legal and regulatory counsel and ensures HR and compliance practices are aligned with Saudi labor laws and best practices.\n'
+            description: 'Holding a Master\'s in Islamic Finance and over 13 years of legal expertise, Zeina provides strategic legal and regulatory counsel and ensures HR and compliance practices are aligned with Saudi labor laws and best practices.\n'
         },
         {
             id: 'jose-mateos',
@@ -56,7 +56,7 @@ const ExpertsPage = () => {
             title: 'IT Systems Delivery Manager',
             image: '/background_19.png',
             expertise: 'IT Integration & Project Delivery',
-            description: 'With over two decades in IT and systems integration, AbdelMajeed ensures smooth delivery of Makamat's technical services, leading projects from planning through execution.\n'
+            description: 'With over two decades in IT and systems integration, AbdelMajeed ensures smooth delivery of Makamat\'s technical services, leading projects from planning through execution.\n'
         }
     ];
 

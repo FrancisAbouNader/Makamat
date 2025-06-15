@@ -34,7 +34,7 @@ const ExpertDetailPage = () => {
             name: "Zeina Attar",
             title: "Chief Legal & HR Advisor",
             image: "/3.png",
-            education: 'Chief Legal & HR Advisor - With over 13 years of expertise in providing regulatory guidance and advice to individuals and organizations. Holding a Master's Degree in Islamic Finance. Supported by a wealth of experience in solving legal issues affecting business operations and transactions. Successfully published the master's thesis in the Islamic Bank's library. Adept at managing the legal departments\' employees to ensure following the best legal practices.'
+            education: 'Chief Legal & HR Advisor - With over 13 years of expertise in providing regulatory guidance and advice to individuals and organizations. Holding a Master\'s Degree in Islamic Finance. Supported by a wealth of experience in solving legal issues affecting business operations and transactions. Successfully published the master's thesis in the Islamic Bank\'s library. Adept at managing the legal departments\' employees to ensure following the best legal practices.'
         },
         "jose-mateos": {
             id: "jose-mateos",
