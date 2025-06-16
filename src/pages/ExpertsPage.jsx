@@ -70,7 +70,7 @@ const ExpertsPage = () => {
                 {/* Hero Section */}
                 <section className="py-16 md:py-20 relative bg-no-repeat bg-bottom bg-contain mb-40 md:mb-60">
                     <div className="max-w-6xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
-                        <div className="text-center lg:text-left">
+                        <div className="text-center lg:text-left pt-20">
                             <AnimatedSection animation="fadeInUp" delay={200}>
                                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
                                     Our Experts

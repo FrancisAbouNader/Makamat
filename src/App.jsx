@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import SolutionsPage from './pages/SolutionsPage';
@@ -12,10 +11,12 @@ import DigilinkPage from "./pages/DigiLinkPage.jsx";
 import ExpertsPage from "./pages/ExpertsPage.jsx";
 import ExpertDetailPage from "./pages/ExpertDetailsPage.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
   return (
       <div className="min-h-screen bg-white">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/solutions" element={<SolutionsPage />} />
