@@ -66,11 +66,11 @@ const ExpertsPage = () => {
     return (
         <>
             <Header />
-            <main className="min-h-screen bg-white">
+            <main className="min-h-screen bg-white  overflow-hidden">
                 {/* Hero Section */}
-                <section className="py-16 md:py-20 relative bg-no-repeat bg-bottom bg-contain mb-40 md:mb-60">
-                    <div className="max-w-6xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
-                        <div className="text-center lg:text-left pt-20">
+                <section className=" relative bg-no-repeat bg-bottom bg-contain">
+                    <div className="relative my-20">
+                        <div className="text-center lg:text-left max-w-4xl mx-auto pt-20">
                             <AnimatedSection animation="fadeInUp" delay={200}>
                                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
                                     Our Experts
@@ -87,20 +87,21 @@ const ExpertsPage = () => {
                                 </p>
                             </AnimatedSection>
                         </div>
-                    </div>
-                    <AnimatedSection animation="scaleIn" delay={800}>
                         <img
-                            src="/background_17.png"
+                            src="/our-experts.png"
                             alt="Flowing lines background"
-                            className="w-full h-[600px] md:h-[1000px] absolute top-20 object-cover"
+                            className="scale-150 absolute top-20 object-cover"
                         />
-                    </AnimatedSection>
+                    </div>
+                    {/*<AnimatedSection animation="scaleIn" delay={800}>*/}
+
+                    {/*</AnimatedSection>*/}
                 </section>
 
                 {/* Leadership Description Section */}
-                <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+                <section className="md:pt-40 mb-10 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-4xl mx-auto text-center">
-                        <AnimatedSection className={'mt-28'} animation="fadeInUp" delay={200}>
+                        <AnimatedSection className={'md:mt-48'} animation="fadeInUp" delay={200}>
                             <p className="text-2xl md:text-3xl mb-6 md:mb-8 font-bold">Leadership Team Overview</p>
                         </AnimatedSection>
                         <AnimatedSection animation="fadeInUp" delay={400}>
@@ -115,7 +116,7 @@ const ExpertsPage = () => {
                 </section>
 
                 {/* Experts Grid Section */}
-                <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+                <section className="px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
                         <div ref={expertsRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center justify-items-center mb-16">
                             {experts.map((expert, index) => (
@@ -131,7 +132,7 @@ const ExpertsPage = () => {
                                         <img
                                             src={expert.image || '/human-4.png'}
                                             alt={expert.name || 'Team Member'}
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-contain"
                                         />
                                     </div>
 
@@ -169,7 +170,7 @@ const ExpertsPage = () => {
                                         <img
                                             src={expert.image || '/human-4.png'}
                                             alt={expert.name || 'Team Member'}
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-contain"
                                         />
                                     </div>
 

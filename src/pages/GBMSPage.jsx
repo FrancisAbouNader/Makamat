@@ -6,16 +6,24 @@ import AnimatedSection from '../components/AnimatedSection';
 import { useStaggeredAnimation } from '../hooks/useScrollAnimation';
 
 const GBMSPage = () => {
-    const clients = [
-        {  logo: "/company-9.png" },
-        { logo: "/company-10.png" },
-        {  logo: "/company-11.png" },
-        { logo: "/company-12.png" }
+    const gbmsLogoFiles = [
+        '19.png',
+        '20.png',
+        '21.png',
+        'Creative Medical.png',
+        'IMC.png',
+        'MIR.png',
+        'Nocaacare.png',
+        'Nutricia.png',
+        'Philips Respironics.png',
+        'Posthorax.png',
+        'Tracoe.png'
     ];
 
-    // Duplicate the clients array to create seamless loop
-    const duplicatedClients = [...clients, ...clients];
-
+    const gbmsClients = gbmsLogoFiles.map((file) => ({
+        name: file.replace('.png', '').replace(/-/g, ' '),
+        logo: `/GBMS Clients Logo/${file}`
+    }));
     const teamMembers = [
         { id: 'alia-al-ahmar', name: "Alia'a Al Ahmar", title: 'Operations Manager', image: '/human-1.png' },
         { id: 'kassem-badran', name: 'Kassem Badran', title: 'Sales Manager', image: '/human-4.png' },
@@ -330,12 +338,12 @@ const GBMSPage = () => {
                                 {/* Moving tape container */}
                                 <div className="overflow-hidden relative">
                                     <div className="flex animate-scroll space-x-8 md:space-x-16">
-                                        {duplicatedClients.map((client, index) => (
+                                        {gbmsClients.map((client, index) => (
                                             <div key={index} className="flex items-center justify-center flex-shrink-0 transform hover:scale-110 transition-transform duration-300">
-                                                <div className="h-12 md:h-16 flex items-center justify-center min-w-[100px] md:min-w-[120px]">
+                                                <div className=" flex items-center justify-center w-32">
                                                     <img
                                                         src={client.logo}
-                                                        className="max-h-12 md:max-h-16 w-auto object-contain filter hover:brightness-110 transition-all duration-300"
+                                                        className="h-30 w-30  object-contain filter hover:brightness-110 transition-all duration-300"
                                                     />
                                                 </div>
                                             </div>

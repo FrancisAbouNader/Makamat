@@ -6,16 +6,16 @@ const HeroSection = () => {
     <section className="relative bg-white min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 scale-100 md:-right-96 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/background_1.png)',
+          backgroundImage: 'url(/hero-section.png)',
         }}
       />
       
       {/* Overlay to ensure text readability if needed */}
       <div className="absolute inset-0 bg-white bg-opacity-10" />
 
-      <div className="absolute bottom-0 left-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
+      <div className="absolute lg:bottom-0 lg:left-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-20 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <AnimatedSection animation="fadeInUp" delay={200}>

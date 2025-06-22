@@ -38,7 +38,7 @@ const WhyChooseSection = () => {
         <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div 
-              key={index} 
+              key={index}
               className={`relative min-h-[400px] rounded-2xl overflow-hidden shadow-lg transform transition-all duration-700 hover:scale-105 hover:shadow-2xl ${
                 visibleItems.has(index) 
                   ? 'opacity-100 translate-y-0' 
@@ -51,8 +51,7 @@ const WhyChooseSection = () => {
               }}
             >
               {/* Blue overlay to match Figma design */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/90 via-blue-600/90 to-blue-700/90" />
-              
+
               <div className="relative z-10 p-6 text-white h-full flex flex-col">
                 {/* Orange gradient button */}
                 <div className="mb-6">

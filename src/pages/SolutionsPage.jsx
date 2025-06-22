@@ -124,16 +124,21 @@ const SolutionsPage = () => {
                 {solutionCards.map((card, idx) => (
                     <div
                         key={idx}
-                        className={`rounded-xl min-h-[400px] text-center p-6 bg-gradient-to-br from-yellow-200 via-orange-300 to-red-200 shadow-md hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 ${
+                        className={`rounded-xl min-h-[400px]  p-6 bg-gradient-to-br from-yellow-200 via-orange-300 to-red-200 shadow-md hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 ${
                           visibleCards.has(idx) 
                             ? 'opacity-100 translate-y-0' 
                             : 'opacity-0 translate-y-8'
                         }`}
                     >
-                      <h3 className="text-lg mx-auto text-center font-semibold text-gray-900 border-b-2 border-black mb-4 inline-block">
+                      <h3  style={{
+                        backgroundImage: 'url(/background_0.png)',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                      }}
+                           className="text-md mx-auto text-start px-6 py-1 rounded-full  text-white mb-4 inline-block">
                         {card.title}
                       </h3>
-                      <p className="text-gray-800 text-md text-start mt-20 leading-relaxed">{card.description}</p>
+                      <p className="text-gray-800 text-md text-start leading-relaxed">{card.description}</p>
                     </div>
                 ))}
               </div>
@@ -141,11 +146,11 @@ const SolutionsPage = () => {
           </section>
 
           {/* Our Process Section */}
-          <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+          <section className="px-4 sm:px-6 lg:px-8 bg-white">
             <div className="max-w-6xl mx-auto">
               {/* Quotation */}
               <AnimatedSection animation="fadeInUp" delay={200}>
-                <div className="text-center mb-16">
+                <div className="text-center mb-16 py-20">
                   <blockquote className="text-lg md:text-xl italic text-gray-800 font-medium">
                     "Through technological innovation, what was once impossible is now within reach"
                   </blockquote>
@@ -154,7 +159,7 @@ const SolutionsPage = () => {
 
               {/* Heading */}
               <AnimatedSection animation="fadeInLeft" delay={400}>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-16 text-left">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-16 text-left">
                   Our Process
                 </h2>
               </AnimatedSection>
@@ -162,13 +167,13 @@ const SolutionsPage = () => {
               {/* Process Steps with Single Continuous Gradient Line */}
               <div className="relative">
                 {/* Single Continuous Gradient Line */}
-                <div className="absolute left-[calc(33.333%-2px)] top-0 w-10 h-full bg-[#E49D23] rounded-full blur-md" />
+                <div className="hidden md:block absolute left-[calc(33.333%-2px)] top-0 w-10 h-full bg-[#E49D23] rounded-full blur-md" />
 
                 <div ref={stepsRef} className="space-y-12">
                   {processSteps.map((step, index) => (
                       <div 
                         key={index} 
-                        className={`flex items-start gap-8 relative transition-all duration-700 ${
+                        className={`flex flex-col md:flex-row items-start gap-8 relative transition-all duration-700 ${
                           visibleSteps.has(index) 
                             ? 'opacity-100 translate-x-0' 
                             : 'opacity-0 translate-x-8'
@@ -183,7 +188,7 @@ const SolutionsPage = () => {
 
                         {/* Right column (Description) */}
                         <div className="flex-1 text-end">
-                          <p className="text-start ml-40 md:text-lg text-gray-700 leading-relaxed">
+                          <p className="text-start ml-0 md:ml-40 md:text-lg text-gray-700 leading-relaxed">
                             {step.description}
                           </p>
                         </div>
@@ -194,11 +199,11 @@ const SolutionsPage = () => {
 
               {/* Get Started Section */}
               <AnimatedSection animation="fadeInUp" delay={600}>
-                <div className="mt-20 text-left">
+                <div className="mt-40 text-left">
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                     Get Started
                   </h3>
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-col md:flex-row justify-between items-center">
                     <p className="text-base md:text-lg text-center text-gray-700">
                       Explore how Makamat's RFID solutions can transform your operations
                     </p>

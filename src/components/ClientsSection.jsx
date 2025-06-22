@@ -2,15 +2,25 @@ import React from 'react';
 import AnimatedSection from './AnimatedSection';
 
 const ClientsSection = () => {
-  const clients = [
-    { name: "The Clorox Company", logo: "/company-1.png" },
-    { name: "Friesland Campina", logo: "/company-2.png" },
-    { name: "Tetra Pak", logo: "/company-3.png" },
-    { name: "Saudi Airlines Catering", logo: "/company-4.png" }
+  const logoFiles = [
+    'Fries Land.png',
+    'Frito Lay.png',
+    'JC.png',
+    'Johns Hopkins.png',
+    'Obeikan.png',
+    'Pepsico.png',
+    'PnG.png',
+    'Saudi Airlines Catering.png',
+    'Tahakom.png',
+    'Tetra Pak.png',
+    'The Clorox Company.png',
+    'Unilever.png'
   ];
 
-  // Duplicate the clients array to create seamless loop
-  const duplicatedClients = [...clients, ...clients];
+  const clients = logoFiles.map((file) => ({
+    name: file.replace('.png', ''),
+    logo: `/Makamat Client List Logo/${file}`
+  }));
 
   return (
     <section className="py-16 bg-white">
@@ -20,13 +30,13 @@ const ClientsSection = () => {
             {/* Moving tape container */}
             <div className="overflow-hidden relative">
               <div className="flex animate-scroll space-x-16 hover:animation-pause">
-                {duplicatedClients.map((client, index) => (
+                {clients.map((client, index) => (
                   <div key={index} className="flex items-center justify-center flex-shrink-0 transform hover:scale-110 transition-transform duration-300">
-                    <div className="h-16 flex items-center justify-center min-w-[120px]">
+                    <div className="flex items-center justify-center ">
                       <img 
                         src={client.logo} 
                         alt={client.name}
-                        className="max-h-16 w-auto object-contain filter hover:brightness-110 transition-all duration-300"
+                        className=" w-44 h-44 object-contain filter hover:brightness-110 transition-all duration-300"
                       />
                     </div>
                   </div>

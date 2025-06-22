@@ -19,7 +19,7 @@ const SubsidiariesPage = () => {
                     />
 
                     {/* Content */}
-                    <div className="relative z-10 max-w-4xl text-black px-4 sm:px-6 lg:px-8 mb-44 text-center lg:text-left lg:ml-auto">
+                    <div className="md:absolute -right-20 top-36 z-10 max-w-4xl text-black px-4 sm:px-6 lg:px-8 mb-44 text-center lg:text-left lg:ml-auto">
                         <AnimatedSection animation="fadeInUp" delay={200}>
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16">
                                 Subsidiaries

@@ -88,11 +88,11 @@ const ExpertDetailPage = () => {
                     <AnimatedSection animation="fadeInUp" delay={200}>
                         <div className="text-center mb-8 md:mb-12">
                             {/* Profile Image */}
-                            <div className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-6 md:mb-8 overflow-hidden">
+                            <div className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-6 md:mb-8 bg-white  rounded-[25px] md:rounded-[50px] shadow-xl overflow-hidden">
                                 <img
                                     src={member.image}
                                     alt={member.name}
-                                    className="w-full h-full rounded-[25px] md:rounded-[50px] object-cover"
+                                    className="w-full h-full object-cover"
                                 />
                             </div>
 

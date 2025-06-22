@@ -12,9 +12,6 @@ const AboutSection = () => {
         }}
       />
       
-      {/* Blue overlay to match the design */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/85 via-blue-600/85 to-blue-700/85" />
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 relative z-20">
         {/* About Us Section - Text left, Image right */}
         <div className="grid grid-cols-1 !text-black lg:grid-cols-2 gap-12 items-center mb-16">

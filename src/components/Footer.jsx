@@ -2,18 +2,18 @@ import React from 'react';
 
 const Footer = () => {
   return (
-      <footer className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-white py-12 md:px-24">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
             {/* Left: Logo and Description */}
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
-                <img src="/logo.png" alt="Makamat Logo" className="h-8 w-auto" />
+                <img src="/logo.png" alt="Makamat Logo" className="h-16" />
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed max-w-md">
+              <p className="text-gray-700 font-bold text-sm leading-relaxed max-w-md">
                 Supporting public and private sectors through advanced AIDC, healthcare, and digital infrastructure solutions.
               </p>
-              <div className="flex space-x-6 text-sm text-gray-600">
+              <div className="flex flex-col md:flex-row w-full md:space-x-6 text-sm text-gray-600">
                 <a href="#" className="hover:text-gray-900">Privacy Policy</a>
                 <a href="#" className="hover:text-gray-900">Terms & Conditions</a>
                 <a href="#" className="hover:text-gray-900">Cookie Policy</a>
@@ -21,24 +21,21 @@ const Footer = () => {
             </div>
 
             {/* Right: Contact Info and Social */}
-            <div className="space-y-4 text-sm text-gray-700 mt-10">
-              <div className="text-center">
+            <div className="space-y-4 text-sm text-gray-700 md:mt-10">
+              <div className="md:text-end w-fit ml-auto  ">
                 <p className="font-medium">District Office 101, Al Nakheel Center, Al-Madinah</p>
                 <p>Al-Munawwarah Rd., Al Hamra'a, Jeddah 23324, Saudi Arabia</p>
               </div>
-              <div className="space-y-1 w-1/2 m-auto">
-                <div className="flex flex-col-reverse md:flex-row justify-between">
-                  <span>+966 12 664 6063</span>
+              <div className="flex flex-col items-end w-fit ml-auto">
+                <div className="grid grid-cols-2 gap-x-24 ">
+                  <span className={'text-end'}>+966 12 664 6063</span>
                   <span>Fax: +966 12 661 2023</span>
+                  <span className={'text-end'}>+966 12 664 2023</span>
+                  <span>info@rfid.sa</span>
                 </div>
-                <div className="flex flex-col-reverse md:flex-row justify-between">
-                  <span>+966 12 664 2023</span>
-                  <span>info@fid.sa</span>
-                </div>
-
-                <div className="justify-center flex space-x-4 pt-4">
+                <div className="justify-center flex space-x-4 mx-auto pt-4">
                   {/* GitHub */}
-                  <a href="#" className="text-gray-600 hover:text-gray-900" aria-label="GitHub">
+                  <a href="https://www.instagram.com/rfid.sa/?igsh=MXZnc29zcXN3OXQ0dw%3D%3D" className="text-gray-600 hover:text-gray-900" aria-label="GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                          className="bi bi-instagram" viewBox="0 0 16 16">
                       <path
@@ -47,7 +44,7 @@ const Footer = () => {
                   </a>
 
                   {/* LinkedIn */}
-                  <a href="#" className="text-gray-600 hover:text-gray-900" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/company/rfid-sa/posts/?feedView=all" className="text-gray-600 hover:text-gray-900" aria-label="LinkedIn">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                       <path
                           d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM7.1 20.5H3.5v-11h3.6v11zM5.3 8.3c-1.1 0-1.9-.8-1.9-1.9S4.2 4.5 5.3 4.5c1.1 0 1.9.8 1.9 1.9s-.9 1.9-1.9 1.9zm15.2 12.2h-3.6v-5.6c0-1.3-.5-2.2-1.6-2.2-1 0-1.5.7-1.7 1.3-.1.2-.1.5-.1.8v5.7H9.9v-11h3.5v1.5c.5-.7 1.3-1.7 3.2-1.7 2.3 0 4 1.5 4 4.6v6.6z"
@@ -57,7 +54,6 @@ const Footer = () => {
                 </div>
 
               </div>
-
             </div>
           </div>
         </div>
