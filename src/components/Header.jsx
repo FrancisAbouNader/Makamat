@@ -70,7 +70,11 @@ const Header = () => {
                             ) : (
                                 <div key={link.name} className="relative group">
 
-                                    <a href={link.path} className="px-3 py-2 text-sm flex items-center gap-x-3 font-medium text-gray-700 hover:text-blue-600 focus:outline-none">
+                                    <a href={link.path} className={`px-3 py-2 text-sm flex items-center gap-x-3 font-medium text-gray-700 hover:text-blue-600 focus:outline-none ${
+                                        isActive(link.path)
+                                            ? '!text-blue-600 border-b-2 border-blue-600'
+                                            : 'text-gray-700 hover:text-blue-600'
+                                    }`}>
                                         {link.name}
                                         <span> <svg
                                         className="w-4 h-4 mt-1 rotate-180 transition-transform group-hover:rotate-0"
@@ -87,7 +91,11 @@ const Header = () => {
                                             <Link
                                                 key={child.name}
                                                 to={child.path}
-                                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${
+                                        isActive(child.path)
+                                            ? '!text-blue-600 border-b-2 border-blue-600'
+                                            : 'text-gray-700 hover:text-blue-600'
+                                    }`}
                                             >
                                                 {child.name}
                                             </Link>

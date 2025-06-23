@@ -33,7 +33,8 @@ const ClientsSection = () => {
                 {clients.map((client, index) => (
                   <div key={index} className="flex items-center justify-center flex-shrink-0 transform hover:scale-110 transition-transform duration-300">
                     <div className="flex items-center justify-center ">
-                      <img 
+                      <img
+                          loading={'lazy'}
                         src={client.logo} 
                         alt={client.name}
                         className=" w-44 h-44 object-contain filter hover:brightness-110 transition-all duration-300"

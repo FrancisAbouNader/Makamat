@@ -27,7 +27,8 @@ const AboutSection = () => {
           <AnimatedSection animation="fadeInRight" delay={400}>
             <div className="flex justify-center lg:justify-end">
               <div className="w-80 h-[500px] rounded-full overflow-hidden transform hover:scale-105 transition-transform duration-500">
-                <img 
+                <img
+                    loading={'lazy'}
                   src="/abous-us-1.png" 
                   alt="About Us - Technology Solutions"
                   className="w-full h-full object-cover"
@@ -42,7 +43,8 @@ const AboutSection = () => {
           <AnimatedSection animation="fadeInLeft" delay={200}>
             <div className="flex justify-center lg:justify-start order-2 lg:order-1">
               <div className="w-80 h-[500px] rounded-full overflow-hidden transform hover:scale-105 transition-transform duration-500">
-                <img 
+                <img
+                    loading={'lazy'}
                   src="/abous-us-2.png" 
                   alt="Mission - Innovation and Quality"
                   className="w-full h-full object-cover"

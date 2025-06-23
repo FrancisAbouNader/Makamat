@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 scale-100 md:-right-96 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/hero-section.png)',
+          backgroundImage: 'url(/hero-section.webp)',
         }}
       />
       

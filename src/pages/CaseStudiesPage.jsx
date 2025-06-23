@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import AnimatedSection from '../components/AnimatedSection';
 import { useStaggeredAnimation } from '../hooks/useScrollAnimation';
 
-const CaseStudiesPage = () => {
+// const CaseStudiesPage = () => {
     const caseStudies = [
         {
             id: 'clorox',
@@ -120,6 +120,7 @@ description: "Makamat delivered a modular RFID access control and time-attendanc
                                     {/* Company Logo and Category */}
                                     <div className="flex items-start gap-x-5">
                                         <img
+                                            loading={'lazy'}
                                             src={study.logo}
                                             alt={study.company}
                                             className="h-16 object-contain flex-shrink-0 transform hover:scale-110 transition-transform duration-300"

@@ -88,7 +88,7 @@ const ExpertsPage = () => {
                             </AnimatedSection>
                         </div>
                         <img
-                            src="/our-experts.png"
+                            src="/our-experts.webp"
                             alt="Flowing lines background"
                             className="scale-150 absolute top-20 object-cover"
                         />
