@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import AnimatedSection from '../components/AnimatedSection';
 import { useStaggeredAnimation } from '../hooks/useScrollAnimation';
 
-// const CaseStudiesPage = () => {
+const CaseStudiesPage = () => {
     const caseStudies = [
         {
             id: 'clorox',
