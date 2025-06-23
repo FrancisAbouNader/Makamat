@@ -36,7 +36,7 @@ const DigilinkPage = () => {
 
                             {/* Overlay Text Inside Image */}
                             <AnimatedSection animation="fadeInRight" delay={300}>
-                                <div className="absolute w-full md:w-1/2 -bottom-20 -translate-y-1/2 right-0 px-6 md:px-10 py-6 md:py-8 rounded-tl-[40px] md:rounded-tl-[60px]">
+                                <div className="absolute w-full md:w-1/2 -bottom-20 -translate-y-1/2 -right-5 px-6 md:px-10 py-6 md:py-8 rounded-tl-[40px] md:rounded-tl-[60px]">
                                     <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Digilink</h3>
                                     <p className="text-lg font-medium font-bold mb-3">
                                         Business Technology Solutions
@@ -124,7 +124,7 @@ const DigilinkPage = () => {
                                         src={service.image} 
                                         alt={service.name}
                                     />
-                                    <h3 className="text-sm md:text-base font-semibold text-gray-900 absolute top-[13%] left-1/2 transform -translate-x-1/2 w-full px-4">
+                                    <h3 className="text-md md:text-base font-semibold text-gray-900 absolute top-[13%] left-1/2 transform -translate-x-1/2 w-full px-4">
                                         {service.name}
                                     </h3>
                                 </div>
