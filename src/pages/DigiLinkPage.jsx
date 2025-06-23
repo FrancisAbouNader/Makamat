@@ -28,7 +28,7 @@ const DigilinkPage = () => {
                             {/* Background Image */}
                             <AnimatedSection animation="scaleIn" delay={200}>
                                 <img
-                                    src="/background_9.png"
+                                    src="/background_9.webp"
                                     alt="Digital technology solutions"
                                     className="w-full h-full object-contain"
                                 />
