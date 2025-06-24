@@ -14,9 +14,9 @@ const Footer = () => {
                 Supporting public and private sectors through advanced AIDC, healthcare, and digital infrastructure solutions.
               </p>
               <div className="flex flex-col md:flex-row w-full md:space-x-6 text-sm text-gray-600">
-                <a href="#" className="hover:text-gray-900">Privacy Policy</a>
-                <a href="#" className="hover:text-gray-900">Terms & Conditions</a>
-                <a href="#" className="hover:text-gray-900">Cookie Policy</a>
+                <a href="/privacy-policy" className="hover:text-gray-900">Privacy Policy</a>
+                <a href="/terms-conditions" className="hover:text-gray-900">Terms & Conditions</a>
+                <a href="/cookie-policy" className="hover:text-gray-900">Cookie Policy</a>
               </div>
             </div>
 
