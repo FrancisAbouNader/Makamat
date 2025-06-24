@@ -16,7 +16,7 @@ const PrivacyPolicyPage = () => {
                             </h1>
                         </AnimatedSection>
 
-                        <AnimatedSection animation="fadeInUp" delay={400}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8">
                                 This Privacy Policy describes how [Makamat] ("we," "us," or "our") collects, uses, and discloses your information
                                 when you visit our website at [www.mtc.com.sa] (the "Website"). By using the Website, you agree to the
@@ -25,7 +25,7 @@ const PrivacyPolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Section 1: Information We Collect */}
-                        <AnimatedSection animation="fadeInUp" delay={600}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     1. Information We Collect
@@ -52,7 +52,7 @@ const PrivacyPolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Section 2: How We Use Your Information */}
-                        <AnimatedSection animation="fadeInUp" delay={800}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     2. How We Use Your Information
@@ -76,7 +76,7 @@ const PrivacyPolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Section 3: Disclosure of Your Information */}
-                        <AnimatedSection animation="fadeInUp" delay={1000}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     3. Disclosure of Your Information
@@ -119,7 +119,7 @@ const PrivacyPolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Section 4: Security of Your Information */}
-                        <AnimatedSection animation="fadeInUp" delay={1200}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     4. Security of Your Information
@@ -133,7 +133,7 @@ const PrivacyPolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Section 5: Links to Other Websites */}
-                        <AnimatedSection animation="fadeInUp" delay={1400}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     5. Links to Other Websites
@@ -151,7 +151,7 @@ const PrivacyPolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Section 6: Children's Privacy */}
-                        <AnimatedSection animation="fadeInUp" delay={1600}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     6. Children's Privacy
@@ -167,7 +167,7 @@ const PrivacyPolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Section 7: Changes to This Privacy Policy */}
-                        <AnimatedSection animation="fadeInUp" delay={1800}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     7. Changes to This Privacy Policy
@@ -188,7 +188,7 @@ const PrivacyPolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Section 8: Contact Us */}
-                        <AnimatedSection animation="fadeInUp" delay={2000}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     8. Contact Us
@@ -205,7 +205,7 @@ const PrivacyPolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Last Updated */}
-                        <AnimatedSection animation="fadeInUp" delay={2200}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="text-center py-8 ">
                                 <p className="text-black font-bold font-medium">
                                     Last updated: 21 June 2025

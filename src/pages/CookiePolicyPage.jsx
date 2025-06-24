@@ -17,7 +17,7 @@ const CookiePolicyPage = () => {
                             </h1>
                         </AnimatedSection>
 
-                        <AnimatedSection animation="fadeInUp" delay={400}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-8">
                                 <p className="text-base md:text-lg font-semibold text-gray-900 mb-4">
                                     Effective Date: 21 June 2025
@@ -31,7 +31,7 @@ const CookiePolicyPage = () => {
                         </AnimatedSection>
 
                         {/* How We Use Cookies Section */}
-                        <AnimatedSection animation="fadeInUp" delay={600}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     How We Use Cookies
@@ -89,7 +89,7 @@ const CookiePolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Third-Party Cookies Section */}
-                        <AnimatedSection animation="fadeInUp" delay={800}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     Third-Party Cookies
@@ -102,7 +102,7 @@ const CookiePolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Your Choices Regarding Cookies Section */}
-                        <AnimatedSection animation="fadeInUp" delay={1000}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     Your Choices Regarding Cookies
@@ -120,7 +120,7 @@ const CookiePolicyPage = () => {
                         </AnimatedSection>
 
                         {/* More Information About Cookies Section */}
-                        <AnimatedSection animation="fadeInUp" delay={1200}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     More Information About Cookies
@@ -146,7 +146,7 @@ const CookiePolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Changes to This Cookie Policy Section */}
-                        <AnimatedSection animation="fadeInUp" delay={1400}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     Changes to This Cookie Policy
@@ -160,7 +160,7 @@ const CookiePolicyPage = () => {
                         </AnimatedSection>
 
                         {/* Contact Us Section */}
-                        <AnimatedSection animation="fadeInUp" delay={1600}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <div className="mb-12">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     Contact Us

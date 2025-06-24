@@ -143,7 +143,7 @@ const TermsConditionsPage = () => {
                             </h1>
                         </AnimatedSection>
 
-                        <AnimatedSection animation="fadeInUp" delay={400}>
+                        <AnimatedSection animation="fadeInUp" delay={200}>
                             <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-12">
                                 Makamat for Technological Contracting Est., hereafter "Seller", makes all sales subject to the following terms
                                 and conditions:
@@ -155,7 +155,7 @@ const TermsConditionsPage = () => {
                                 <AnimatedSection
                                     key={term.number}
                                     animation="fadeInUp"
-                                    delay={300 + index * 50}
+                                    delay={200}
                                 >
                                     <div className="flex gap-6 items-start">
                                         <div className="flex-1 pt-1">
