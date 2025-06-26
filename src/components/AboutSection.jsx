@@ -39,7 +39,7 @@ const AboutSection = () => {
         </div>
 
         {/* Mission Section - Image left, Text right */}
-        <div className="grid grid-cols-1 mb-24 lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col-reverse lg:grid  mb-24 lg:grid-cols-2 gap-12 items-center">
           <AnimatedSection animation="fadeInLeft" delay={200}>
             <div className="flex justify-center lg:justify-start order-2 lg:order-1">
               <div className="w-80 h-[500px] rounded-full overflow-hidden transform hover:scale-105 transition-transform duration-500">

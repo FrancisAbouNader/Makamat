@@ -3,10 +3,10 @@ import AnimatedSection from './AnimatedSection';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-white min-h-screen flex items-center overflow-hidden">
+    <section className="relative bg-white min-h-[700px] md:min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 scale-100 md:-right-96 bg-cover bg-center bg-no-repeat"
+        className="absolute md:block hidden inset-0 scale-100 md:-right-96 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url(/hero-section.webp)',
         }}

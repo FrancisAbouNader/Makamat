@@ -117,12 +117,12 @@ description: "Makamat delivered a modular RFID access control and time-attendanc
                                     }`}
                                 >
                                     {/* Company Logo and Category */}
-                                    <div className="flex items-start gap-x-5">
+                                    <div className="flex-col md:flex-row items-start gap-x-5">
                                         <img
                                             loading={'lazy'}
                                             src={study.logo}
                                             alt={study.company}
-                                            className="h-16 object-contain flex-shrink-0 transform hover:scale-110 transition-transform duration-300"
+                                            className=" h-20 mx-auto md:mx-0 md:mb-0 mb-6 md:h-16 object-contain flex-shrink-0 transform hover:scale-110 transition-transform duration-300"
                                         />
                                         <div className="flex-1">
                                             {/* Case Study Title */}

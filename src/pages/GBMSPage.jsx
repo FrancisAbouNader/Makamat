@@ -172,15 +172,15 @@ const GBMSPage = () => {
                         </AnimatedSection>
 
                         {/* Medical Devices */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
+                        <div className=" items-center grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
                             {/* NIV Therapy */}
                             <AnimatedSection animation="fadeInLeft" delay={400}>
-                                <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                                <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
                                     <div className="flex-shrink-0">
                                         <img
                                             src="/item-1.png"
                                             alt="NIV Therapy Device"
-                                            className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg"
+                                            className="w-60 h-32 md:h-60 object-cover rounded-lg"
                                         />
                                     </div>
                                     <div className="text-center sm:text-left">
@@ -194,7 +194,7 @@ const GBMSPage = () => {
 
                             {/* VPAP COPD Systems */}
                             <AnimatedSection animation="fadeInRight" delay={600}>
-                                <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                                <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
                                     <div className="flex-shrink-0">
                                         <img
                                             src="/item-2.png"
