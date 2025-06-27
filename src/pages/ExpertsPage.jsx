@@ -90,7 +90,7 @@ const ExpertsPage = () => {
                         <img
                             src="/our-experts.webp"
                             alt="Flowing lines background"
-                            className="scale-150 absolute top-20 object-cover"
+                            className="scale-150 hidden md:block absolute top-20 object-cover"
                         />
                     </div>
                     {/*<AnimatedSection animation="scaleIn" delay={800}>*/}

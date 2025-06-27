@@ -49,7 +49,7 @@ const Header = () => {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-3 transform hover:scale-105 transition-transform duration-300">
-                        <img src="/logo.png" alt="Makamat Logo" className="h-16 w-auto" />
+                        <img src="/logo-3.png" alt="Makamat Logo" className="h-16 w-auto" />
                     </Link>
 
                     {/* Desktop Nav */}

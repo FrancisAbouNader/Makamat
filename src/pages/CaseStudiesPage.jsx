@@ -80,15 +80,15 @@ description: "Makamat delivered a modular RFID access control and time-attendanc
             <main className="min-h-screen overflow-hidden relative pt-16">
                 {/* Half Circle Background with Custom Gradient - positioned to show only left half */}
                 <div
-                    className="absolute top-24 -right-[350px] w-[650px] h-[650px] blur-md rounded-full pointer-events-none"
+                    className="absolute -right-[70px] -top-52 w-[550px] h-[550px] md:top-24 md:-right-[350px] md:w-[650px] md:h-[650px]  blur-md rounded-full pointer-events-none"
                     style={{
                         background: 'linear-gradient(135deg, #007A94 0%, #00262E 100%)'
                     }}
                 />
 
                 {/* Content */}
-                <section className="relative mt-[200px] z-10 py-28 px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-5xl mx-auto text-left">
+                <section className="relative mt-[200px] z-10 md:py-28 md:pt-0 pt-48   px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-5xl mx-auto text-center md:text-left">
                         <AnimatedSection animation="fadeInUp" delay={200}>
                             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                                 Case Studies

@@ -8,7 +8,7 @@ const Footer = () => {
             {/* Left: Logo and Description */}
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
-                <img src="/logo.png" alt="Makamat Logo" className="h-16" />
+                <img src="/logo-3.png" alt="Makamat Logo" className="h-16" />
               </div>
               <p className="text-gray-700 font-bold text-sm leading-relaxed max-w-md">
                 Supporting public and private sectors through advanced AIDC, healthcare, and digital infrastructure solutions.
