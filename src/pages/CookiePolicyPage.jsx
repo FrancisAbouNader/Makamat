@@ -170,7 +170,7 @@ const CookiePolicyPage = () => {
                                 </p>
                                 <div className="space-y-2 text-gray-700">
                                     <p>By email: info@rfid.sa</p>
-                                    <p>By visiting this page on our website: <a href="/contact" className="text-blue-600 hover:text-blue-800">[Link to Contact Us Page]</a></p>
+                                    <p>By visiting this page on our website: <a href="/contact" className="text-blue-600 hover:text-blue-800">https://makamat.vercel.app</a></p>
                                 </div>
                             </div>
                         </AnimatedSection>
